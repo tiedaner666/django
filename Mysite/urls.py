@@ -4,4 +4,5 @@ from django.urls import path, include
 urlpatterns = [
     path('lb/', include('lb.urls')),
     path('admin/', admin.site.urls),
+    path('wordcount/', include('wordcount.urls')),
 ]
