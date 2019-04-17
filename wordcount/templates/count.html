@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>这里是统计页面！</h1>
+    <h1>统计结果：总共{{count}}</h1>
+    <h1>统计内容：{{text}}</h1>
+    <h1>频次统计：{{word_list}}</h1>
+    {% for word,count in sorted %}
+    {{ word }} - {{ count }}
+    <br>
+    {% endfor %}
+</body>
+</html>
